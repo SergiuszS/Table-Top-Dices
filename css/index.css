@@ -1,0 +1,110 @@
+body .content .diceWrapper .diceField, body, body .content .diceWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .content .diceWrapper {
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alkalami", serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../images/bg_image.jpg");
+}
+body h1 {
+  text-align: center;
+}
+@media (max-width: 340px) {
+  body {
+    line-height: 3rem;
+  }
+}
+body .content {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+body .content .closeMark {
+  position: absolute;
+  top: -7px;
+  right: -20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+body .content .diceWrapper {
+  cursor: pointer;
+}
+body .content .diceWrapper .diceField {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 15%;
+  color: #fff;
+  font-size: 30px;
+  box-shadow: 0px 13px 15px -7px rgb(66, 68, 90);
+}
+body .content .diceWrapper .diceField p {
+  padding-top: 15px;
+}
+body .content .diceWrapper .diceField.k4 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(142deg, rgb(0, 0, 0) 0%, rgba(233, 68, 69, 0.9400092801) 100%);
+}
+body .content .diceWrapper .diceField.k6 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(142deg, rgb(0, 0, 0) 0%, rgb(38, 76, 94) 100%);
+}
+body .content .diceWrapper .diceField.k8 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(142deg, rgb(0, 0, 0) 0%, rgb(163, 76, 80) 100%);
+}
+body .content .diceWrapper .diceField.k10 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(142deg, rgb(0, 0, 0) 0%, rgb(206, 194, 174) 100%);
+}
+body .content .diceWrapper .diceField.k12 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(142deg, rgb(0, 0, 0) 0%, rgb(74, 41, 50) 100%);
+}
+body .content .diceWrapper .diceField.k20 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(142deg, rgb(0, 0, 0) 0%, rgb(232, 68, 60) 100%);
+}
+body .content .diceWrapper .diceField.k100 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(142deg, rgb(0, 0, 0) 0%, rgb(148, 79, 44) 100%);
+}
+body .content .diceWrapper .btn {
+  width: 100%;
+  margin: 10px;
+  font-size: 15px;
+  color: #000;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 12px 5px 5px 5px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+body .content .diceWrapper .btn:hover {
+  border: 2px solid #000;
+}
+
+.inactive {
+  display: none !important;
+}
+
+/*# sourceMappingURL=index.css.map */
